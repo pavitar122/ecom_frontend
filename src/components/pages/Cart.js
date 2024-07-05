@@ -88,7 +88,7 @@ const Cart = () => {
           'authorization': token
         }
       };
-      const response = await axios.post("http://localhost:4000/order/placeOrder", data, config)
+      const response = await axios.post("https://ecom-backend-zlhk.onrender.com/order/placeOrder", data, config)
       if (response) {
         setname("")
         setstreet("")

@@ -28,7 +28,7 @@ const ProductList = () => {
           }
         }
         try {
-          const response = await axios.delete(`http://localhost:4000/product/deleteProduct/${id}`, config)
+          const response = await axios.delete(`https://ecom-backend-zlhk.onrender.com/product/deleteProduct/${id}`, config)
           if (response) {
             console.log(response)
             fetchProducts();

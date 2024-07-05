@@ -32,7 +32,7 @@ const UserList = () => {
       }
     }
     try {
-      const response = await axios.delete(`http://localhost:4000/user/deleteUser/${id}`, config)
+      const response = await axios.delete(`https://ecom-backend-zlhk.onrender.com/user/deleteUser/${id}`, config)
       if (response) {
         console.log(response)
         fetchUsers();
