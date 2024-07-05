@@ -18,6 +18,7 @@ const Orders = () => {
             const response = await axios.get('https://ecom-backend-ten-gamma.vercel.app/order/fetchOrder', config);
             if (response) {
                 setOrders(response.data);
+                console.log(response.data)
             }
         } catch (error) {
             console.log(error);
@@ -41,16 +42,18 @@ const Orders = () => {
                         <div className='order' key={orderIndex}>
                             <h1>Order number: {orderIndex + 1}</h1>
                             {order.products.map((productItem, productIndex) => (
-                                <Order key={productIndex}
-                                    name={productItem.product.name}
+                                <Order
+                                    key={productIndex}
+                                    name={productItem.product ? productItem.product.name : 'Product not available'}
                                     quantity={productItem.quantity}
-                                    image={productItem.product.image}
+                                    image={productItem.product ? productItem.product.image : ''}
                                     address={order.address}
-                                    price={productItem.product.price}
+                                    price={productItem.product ? productItem.product.price : 'N/A'}
                                 />
                             ))}
                         </div>
                     ))}
+
                 </div>
 
             )}
