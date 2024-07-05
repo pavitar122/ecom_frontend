@@ -80,19 +80,19 @@ const Home = () => {
 
       <div className='category-section'>
         <div className='hcard1' onClick={() => scrollToSection(sectionProducts, "Headphone")}>
-          <h1 className='hcard1__heading'>20% Off On Haedphones</h1>
+          <h1 className='hcard1__heading'>20% Off On Headphones</h1>
           <span className='hcard1__des'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</span>
     
         </div>
 
         <div className='hcard2' onClick={() => scrollToSection(sectionProducts, "Earphone")}>
-          <h1 className='hcard2__heading'>20% Off On Haedphones</h1>
+          <h1 className='hcard2__heading'>20% Off On Earphones</h1>
           <span className='hcard2__des'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</span>
     
         </div>
 
         <div className='hcard3' onClick={() => scrollToSection(sectionProducts, "Speaker")}>
-          <h1 className='hcard3__heading'>20% Off On Haedphones</h1>
+          <h1 className='hcard3__heading'>20% Off On Speakers</h1>
           <span className='hcard3__des'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</span>
         </div>
       </div>
