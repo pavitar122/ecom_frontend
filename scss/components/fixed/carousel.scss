@@ -1,0 +1,54 @@
+.slide {
+    height: 92vh;
+    background: linear-gradient(to bottom right, rgb(21, 26, 190), rgb(173, 173, 242));
+    display: flex;
+    align-items: center;
+
+    &__content {
+        padding-left: 20rem;
+        padding-bottom: 10rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__heading {
+            font-size: 10rem;
+            color: white;
+        }
+
+        &__des{
+            font-size: 6rem;
+            color: white;
+        }
+
+        &__button{
+            background-color: white;
+            font-weight: 300;
+            color: black;
+            padding: 1rem 1.5rem ;
+            font-size: 2rem;
+            margin-left: 1rem;
+            margin-top: 3rem;
+            z-index: 10;
+            transition: all 0.1s ease;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover{
+                background-color: black;
+                color: white;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+
+    &__image {
+        height: 65rem;
+        padding-right: 30rem;
+    }
+}
+
+
+
+

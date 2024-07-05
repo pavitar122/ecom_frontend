@@ -1,0 +1,68 @@
+.navbar {
+    height: 8vh;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 5rem;
+        user-select: none;
+        cursor: pointer;
+
+        &__name {
+            color: black;
+            margin-top: 0.5rem;
+        }
+
+        &__logo {
+            font-size: 3rem;
+        }
+    }
+
+
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-right: 5rem;
+
+        &__login {
+            font-size: 2rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        &__cart {
+            font-size: 3rem;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+
+            &__number{
+                z-index: 10;
+                position: absolute;
+                right: 4.4rem;
+                bottom: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2rem;
+                height: 2rem;
+                background-color: red;
+                border-radius: 50%;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.hideCart{
+    display: none;
+}

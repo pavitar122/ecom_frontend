@@ -1,0 +1,41 @@
+.product_heading {
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(163, 163, 171);
+    padding: 1rem;
+    user-select: none;
+    margin-bottom: 1rem;
+
+    &__name {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__price {
+        font-size: 1.5rem;
+    }
+
+    &__delete{
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.1s ease;
+
+        &:hover{
+            color: rgb(246, 103, 103);
+        }
+    }
+
+}
+
+.product_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}

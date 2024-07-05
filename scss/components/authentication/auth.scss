@@ -1,0 +1,74 @@
+.register-page{
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom , rgb(174, 177, 255), rgb(255, 255, 255));
+
+}
+
+.register-container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &__form{
+        background-color: rgb(240, 240, 240);
+        width: 100%;
+        border-radius: 1rem;
+        height: 50vh;
+        padding: 2rem;
+    }
+}
+
+
+.register-tab{
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    gap: 5rem;
+
+    &__login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 0.5rem 0rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__register{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 0.5rem 0rem;
+        width: 50%;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+.active{
+    background-color: rgb(76, 76, 76) !important;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+}

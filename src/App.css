@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+.hcard1 {
+  background-image: linear-gradient(to bottom right, rgba(6, 10, 130, 0.7), rgba(60, 60, 215, 0.5)), url("./components/images/hcard/card1.jpg");
+  background-size: cover;
+  background-position: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hcard2 {
+  background-image: linear-gradient(to bottom right, rgba(6, 10, 130, 0.7), rgba(60, 60, 215, 0.5)), url("./components/images/hcard/card2.jpg");
+  background-size: cover;
+  background-position: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.hcard3 {
+  background-image: linear-gradient(to bottom right, rgba(6, 10, 130, 0.7), rgba(60, 60, 215, 0.5)), url("./components/images/hcard/card3.jpg");
+  background-size: cover;
+  background-position: center;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
