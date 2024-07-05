@@ -16,7 +16,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://ecom-backend-zlhk.onrender.com/user/login', {
+      const response = await axios.post('https://ecom-backend-ten-gamma.vercel.app/user/login', {
         email,
         password,
       });

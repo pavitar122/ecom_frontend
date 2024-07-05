@@ -15,7 +15,7 @@ const UserList = () => {
       }
     }
     try {
-      const response = await axios.get("https://ecom-backend-zlhk.onrender.com/user/fetchUsers", config)
+      const response = await axios.get("https://ecom-backend-ten-gamma.vercel.app/user/fetchUsers", config)
       if (response) {
         console.log(response)
         setusers(response.data.allUsers)
@@ -32,7 +32,7 @@ const UserList = () => {
       }
     }
     try {
-      const response = await axios.delete(`https://ecom-backend-zlhk.onrender.com/user/deleteUser/${id}`, config)
+      const response = await axios.delete(`https://ecom-backend-ten-gamma.vercel.app/user/deleteUser/${id}`, config)
       if (response) {
         console.log(response)
         fetchUsers();

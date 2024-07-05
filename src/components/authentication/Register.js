@@ -23,7 +23,7 @@ const Register = () => {
   const handleRegister = async(e)=>{
     e.preventDefault(); 
     try {
-      const response = await axios.post("https://ecom-backend-zlhk.onrender.com/user/register",{
+      const response = await axios.post("https://ecom-backend-ten-gamma.vercel.app/user/register",{
         name, email, password, cpassword
       })
 

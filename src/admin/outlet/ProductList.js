@@ -11,7 +11,7 @@ const ProductList = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await axios.get(`https://ecom-backend-zlhk.onrender.com/product/fetchProducts/${product}`)
+            const response = await axios.get(`https://ecom-backend-ten-gamma.vercel.app/product/fetchProducts/${product}`)
             if (response) {
                 console.log(response)
                 setproducts(response.data)
@@ -28,7 +28,7 @@ const ProductList = () => {
           }
         }
         try {
-          const response = await axios.delete(`https://ecom-backend-zlhk.onrender.com/product/deleteProduct/${id}`, config)
+          const response = await axios.delete(`https://ecom-backend-ten-gamma.vercel.app/product/deleteProduct/${id}`, config)
           if (response) {
             console.log(response)
             fetchProducts();

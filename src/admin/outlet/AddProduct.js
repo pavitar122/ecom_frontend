@@ -56,7 +56,7 @@ const AddProduct = () => {
     } 
 
   try {
-    const response = await axios.post(`https://ecom-backend-zlhk.onrender.com/product/addProduct/${product}`, productData, config);
+    const response = await axios.post(`https://ecom-backend-ten-gamma.vercel.app/product/addProduct/${product}`, productData, config);
     if (response) {
       console.log(response);
       setname("")

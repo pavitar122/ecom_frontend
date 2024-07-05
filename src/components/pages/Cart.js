@@ -88,7 +88,7 @@ const Cart = () => {
           'authorization': token
         }
       };
-      const response = await axios.post("https://ecom-backend-zlhk.onrender.com/order/placeOrder", data, config)
+      const response = await axios.post("https://ecom-backend-ten-gamma.vercel.app/order/placeOrder", data, config)
       if (response) {
         setname("")
         setstreet("")

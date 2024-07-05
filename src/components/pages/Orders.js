@@ -15,7 +15,7 @@ const Orders = () => {
             },
         };
         try {
-            const response = await axios.get('https://ecom-backend-zlhk.onrender.com/order/fetchOrder', config);
+            const response = await axios.get('https://ecom-backend-ten-gamma.vercel.app/order/fetchOrder', config);
             if (response) {
                 setOrders(response.data);
             }

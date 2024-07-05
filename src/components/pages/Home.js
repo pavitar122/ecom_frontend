@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`https://ecom-backend-zlhk.onrender.com/product/fetchProducts/${category}`)
+        const response = await axios.get(`https://ecom-backend-ten-gamma.vercel.app/product/fetchProducts/${category}`)
         if (response) {
           setproducts(response.data)
         }
